@@ -56,7 +56,7 @@ form.addEventListener('submit', function (e) {
 
 // Load users from localStorage and display them in the table on page load
 window.onload = function () {
-    localStorage.clear();//clear for 1st visit
+    //localStorage.clear();//clear for 1st visit
 
     const users = JSON.parse(localStorage.getItem('users')) || [];
     users.forEach(user => addUserToTable(user));
