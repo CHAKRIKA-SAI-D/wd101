@@ -4,36 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Registration Form</h1>
-
+    <h2>Registration Form</h2>
     <form id="registrationForm">
-        <div class="container">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-        </div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
 
-        <div class="container">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-        </div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-        <div class="container">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-        </div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
 
-        <div class="container">
-            <label for="dob">Date of Birth</label>
-            <input type="date" id="dob" name="dob" required>
-        </div>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
 
-        <div class="container">
-            <input type="checkbox" id="acceptTerms" name="acceptTerms">
-            <label for="acceptTerms">Accept Terms & Conditions</label>
-        </div>
+        <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+        <label for="acceptTerms">Accept Terms & Conditions</label>
 
         <button type="submit">Submit</button>
     </form>
@@ -46,11 +35,11 @@
                 <th>Email</th>
                 <th>Password</th>
                 <th>Date of Birth</th>
-                <th>Accepted Terms?</th>
+                <th>Accepted terms?</th>
             </tr>
         </thead>
         <tbody>
-            <!-- Table rows will be added here dynamically -->
+            <!-- User data will be added here dynamically -->
         </tbody>
     </table>
 
