@@ -24,7 +24,7 @@ function addUserToTable(user) {
     newRow.insertCell(1).textContent = user.email;
     newRow.insertCell(2).textContent = user.password;
     newRow.insertCell(3).textContent = user.dob;
-    newRow.insertCell(4).textContent = user.acceptedTerms ? 'Yes' : 'No';
+    newRow.insertCell(4).textContent = user.acceptedTerms ? "true" : "false";
 }
 
 form.addEventListener('submit', function (e) {
