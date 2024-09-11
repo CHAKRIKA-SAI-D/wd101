@@ -1,93 +1,69 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 0;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
 }
 
-h1 {
+h2 {
     text-align: center;
 }
 
 form {
-    width: 400px;
-    margin: 0 auto; /* Center the form horizontally */
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
-form label {
-    font-size: 14px;
-    margin-top: 10px;
+label {
+    margin: 10px 0 5px;
 }
 
-form input[type="text"],
-form input[type="email"],
-form input[type="password"],
-form input[type="date"] {
-    width: 100%;
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
     padding: 10px;
-    margin-top: 5px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;
 }
 
-form input[type="checkbox"] {
-    margin-right: 10px;
+input[type="checkbox"] {
+    margin-bottom: 15px;
 }
 
-form button {
-    width: 100%;
+button {
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #28a745;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
 }
 
-form button:hover {
-    background-color: #45a049;
+button:hover {
+    background-color: #218838;
 }
 
 table {
     width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
     border-collapse: collapse;
-    margin-top: 20px;
+    text-align: left;
 }
 
 th, td {
     padding: 10px;
     border: 1px solid #ccc;
-    text-align: left;
 }
 
 th {
     background-color: #f2f2f2;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-input[type="checkbox"] {
-    width: auto;
-}
-
-@media (max-width: 600px) {
-    form {
-        width: 100%;
-        padding: 10px;
-    }
-
-    table {
-        font-size: 12px;
-    }
 }
